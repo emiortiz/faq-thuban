@@ -4,6 +4,7 @@
     <link type="text/css" herf="css/faq.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="vendor/boostrap/css/bootstrap.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/faq.css" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,10 +25,10 @@
 
                 <div class="col faq">
                     <div class="card  ">
-
-                        <img class="card-img-top" src="..." alt="Card image cap">
-
-                        <div class="card-body border text-center shadow ">
+                        <div class="card-img-top text-center bc-th">
+                        <img src="img/Adjuntarmdpi.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center shadow ">
                             <h6 class="card-title ">¿Pregunta?</h6>
                             <a href="#" class="btn btn-primary center-block" onclick="popup('myModal1')">Ver
                                 mas...</a>
@@ -37,13 +38,41 @@
                 <!-- The Modal -->
                 <div class="modal" id="myModal1">
                     <div class="card modal-content">
-                            
-                        <img class="" src="..." alt="Card image cap">
 
-                        <div class="card-body border text-center  ">
+                        <div class="w-100 text-center bc-th br-l-r">    
+                        <img src="img/Adjuntarmdpi.png" alt="Card image cap" class="" style="height:7em; width:6em">
+                        </div>
+
+                        <div class="card-body text-center">
                             <span class="close">&times;</span>
                             <h4 class="card-title ">¿Como creo una clase documental?</h4>
-                            <span>bla bla bla bla bla</span>
+                            <!-- <div id="demo" class="carousel slide" data-ride="carousel">
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/panel.png" alt="panel" style="height: 100px; width: 200px">
+                                        <span class="d-flex mt-2">Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
+                                        <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
+                                        <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -54,25 +83,55 @@
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body border text-center shadow ">
                             <h6 class="card-title ">¿Pregunta?</h6>
-                            <a href="#" class="btn btn-primary center-block" onclick="popup('myModal2')">Ver
-                                    mas...</a>
+                            <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#Modal1">
+                            Ver más...
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- The Modal -->
-                <div class="modal" id="myModal2">
-                        <div class="card modal-content">
-                                
-                            <img class="" src="..." alt="Card image cap">
-    
-                            <div class="card-body border text-center  ">
-                                <span class="close">&times;</span>
-                                <h4 class="card-title ">¿Como busco un documento?</h4>
-                                <span>bla bla bla bla bla</span>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="w-100 text-center bc-th br-l-r">
+                        <img src="img/Adjuntarmdpi.png" alt="Card image cap" style="height:5rem">
+                    </div>
+                    <div class="modal-body text-center">
+                        <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+                        <h4 class="card-title ">¿Como creo una clase documental?</h4>
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/panel.png" alt="panel" style="height: 100px; width: 200px">
+                                    <span class="d-flex mt-2">Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
+                                    <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
+                                    <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
+                                </div>
                             </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
                         </div>
                     </div>
-                    <!-- Fin -->
+                    </div>
+                </div>
+                </div>
+                <!-- Fin del Modal -->
 
                 <div class="col faq">
                     <div class="card  ">
