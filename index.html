@@ -4,6 +4,7 @@
     <link type="text/css" herf="css/faq.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="vendor/boostrap/css/bootstrap.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/faq.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/all.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -25,56 +26,68 @@
 
                 <div class="col faq">
                     <div class="card  ">
-                        <div class="card-img-top text-center bc-th">
-                        <img src="img/Adjuntarmdpi.png" alt="Card image cap">
+                          <div class="card-img-top text-center bc-th">
+                            <img src="img/Adjuntarmdpi.png" alt="Card image cap">
                         </div>
-                        <div class="card-body text-center shadow ">
-                            <h6 class="card-title ">¿Pregunta?</h6>
-                            <a href="#" class="btn btn-primary center-block" onclick="popup('myModal1')">Ver
-                                mas...</a>
+                        <div class="card-body border text-center shadow ">
+                            <h6 class="card-title">¿Cómo busco un documento?</h6>
+                            <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#Modal1">
+                            Ver más...
+                            </button>
                         </div>
                     </div>
                 </div>
                 <!-- The Modal -->
-                <div class="modal" id="myModal1">
-                    <div class="card modal-content">
-
-                        <div class="w-100 text-center bc-th br-l-r">    
-                        <img src="img/Adjuntarmdpi.png" alt="Card image cap" class="" style="height:7em; width:6em">
-                        </div>
-
-                        <div class="card-body text-center">
-                            <span class="close">&times;</span>
-                            <h4 class="card-title ">¿Como creo una clase documental?</h4>
-                            <!-- <div id="demo" class="carousel slide" data-ride="carousel">
-                                <ul class="carousel-indicators">
-                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                    <li data-target="#demo" data-slide-to="1"></li>
-                                    <li data-target="#demo" data-slide-to="2"></li>
-                                </ul>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/panel.png" alt="panel" style="height: 100px; width: 200px">
-                                        <span class="d-flex mt-2">Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
-                                        <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
-                                        <span class="d-flex mt-2">Seleccione la clase documental que desea observar</span> 
+                <div class="modal fade pr-0" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div class="w-100 text-center bc-th br-l-r container">
+                        <img src="img/Adjuntarmdpi.png" alt="Card image cap" style="height:5rem">
+                        <span class="close" data-dismiss="modal" aria-label="Close" style="color:white;">&times;</span>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4 class="card-title title-style">¿Cómo busco un documento?</h4>
+                        <div id="demo1" class="carousel slide mt-5" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/panel.png" alt="panel" style="height: 200px; width: 300px">
+                                    <div class="container mt-4">
+                                    <span class="number-style">1. </span>
+                                    <span>Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" href="#demo" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
-                            </div> -->
+                                <div class="carousel-item">
+                                    <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                    <div class="container mt-4">
+                                    <span class="number-style">2. </span>
+                                    <span>Seleccione la clase documental que desea observar</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/BusquedaAvanzada.png" alt="panel">
+                                    <div class="container mt-4">
+                                        <span class="number-style">3. </span>
+                                        <span>Si marca la casilla de búsqueda avanzada, podrá acceder a los campos secundarios y realizar un filtro de busqueda más preciso</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/BDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                    <div class="container mt-4">
+                                        <span class="number-style">4. </span>
+                                        <span>Se debe ingresar al panel de "Documentos" y luego a "Creación"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                                <span class="fas fa-chevron-left" style="color:black"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo1" data-slide="next">
+                                <span class="fas fa-chevron-right" style="color:black;"></span>
+                            </a>
                         </div>
                     </div>
+                    </div>
+                </div>
                 </div>
                 <!-- Fin -->
 
@@ -85,7 +98,7 @@
                         </div>
                         <div class="card-body border text-center shadow ">
                             <h6 class="card-title ">¿Pregunta?</h6>
-                            <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#Modal1">
+                            <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#Modal2">
                             Ver más...
                             </button>
                         </div>
@@ -93,78 +106,123 @@
                 </div>
       
                 <!-- Modal -->
-                <div class="modal fade pr-0" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                    <div class="w-100 text-center bc-th br-l-r">
-                        <img src="img/Adjuntarmdpi.png" alt="Card image cap" style="height:5rem">
-                    </div>
-                    <div class="modal-body text-center">
-                        <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
-                        <h4 class="card-title ">¿Como creo una clase documental?</h4>
-                        <div id="demo" class="carousel slide" data-ride="carousel">
-                            <ul class="carousel-indicators">
-                                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo" data-slide-to="1"></li>
-                                <li data-target="#demo" data-slide-to="2"></li>
-                            </ul>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/panel.png" alt="panel" style="height: 100px; width: 200px">
-                                    <div class="container">
-                                    <span class="d-flex mt-2 text-center">Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
+                <div class="modal fade pr-0" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="w-100 text-center bc-th br-l-r container">
+                                <img src="img/Adjuntarmdpi.png" alt="Card image cap" style="height:5rem">
+                                <span class="close" data-dismiss="modal" aria-label="Close" style="color:white;">&times;</span>
+                            </div>
+                            <div class="modal-body text-center">
+                                <h4 class="card-title title-style">¿Cómo busco un documento?</h4>
+                                <div id="demo2" class="carousel slide mt-5" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/panel.png" alt="panel" style="height: 200px; width: 300px">
+                                            <div class="container mt-4">
+                                            <span class="number-style">1. </span>
+                                            <span>Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                            <div class="container mt-4">
+                                            <span class="number-style">2. </span>
+                                            <span>Seleccione la clase documental que desea observar</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/BusquedaAvanzada.png" alt="panel">
+                                            <div class="container mt-4">
+                                                <span class="number-style">3. </span>
+                                                <span>Si marca la casilla de búsqueda avanzada, podrá acceder a los campos secundarios y realizar un filtro de busqueda más preciso</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/BDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                            <div class="container mt-4">
+                                                <span class="number-style">4. </span>
+                                                <span>Se debe ingresar al panel de "Documentos" y luego a "Creación"</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
-                                    <div class="container">
-                                    <span class="mt-2">Seleccione la clase documental que desea observar</span>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 100px; width: 200px">
-                                    <div class="container">
-                                        <span class="mt-2">Seleccione la clase documental que desea observar</span>
-                                    </div>
+                                    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                                        <span class="fas fa-chevron-left" style="color:black"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo2" data-slide="next">
+                                        <span class="fas fa-chevron-right" style="color:black;"></span>
+                                    </a>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a class="carousel-control-next" href="#demo" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
+                        </div>
                 <!-- Fin del Modal -->
 
                 <div class="col faq">
-                    <div class="card  ">
-                        <div class="card-img-top text-center bc-th">
-                            <img src="img/Adjuntarmdpi.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body border text-center shadow ">
-                            <h6 class="card-title ">¿Pregunta?</h6>
-                            <a href="#" class="btn btn-primary center-block"onclick="popup('myModal3')">Ver
-                                mas...</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- The Modal -->
-                <div class="modal" id="myModal3">
-                        <div class="card modal-content">
-                                
-                            <img class="" src="..." alt="Card image cap">
-    
-                            <div class="card-body border text-center  ">
-                                <span class="close">&times;</span>
-                                <h4 class="card-title ">¿Como exporto un reporte?</h4>
-                                <span>bla bla bla bla bla</span>
+                        <div class="card  ">
+                              <div class="card-img-top text-center bc-th">
+                                <img src="img/Adjuntarmdpi.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body border text-center shadow ">
+                                <h6 class="card-title">¿Cómo busco un documento?</h6>
+                                <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#Modal3">
+                                Ver más...
+                                </button>
                             </div>
                         </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal fade pr-0" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="w-100 text-center bc-th br-l-r container">
+                            <img src="img/Adjuntarmdpi.png" alt="Card image cap" style="height:5rem">
+                            <span class="close" data-dismiss="modal" aria-label="Close" style="color:white;">&times;</span>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h4 class="card-title title-style">¿Cómo busco un documento?</h4>
+                            <div id="demo3" class="carousel slide mt-5" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/panel.png" alt="panel" style="height: 200px; width: 300px">
+                                        <div class="container mt-4">
+                                        <span class="number-style">1. </span>
+                                        <span>Seleccione el Panel de “Documentos” e ingrese a “Búsqueda”</span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/CDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                        <div class="container mt-4">
+                                        <span class="number-style">2. </span>
+                                        <span>Seleccione la clase documental que desea observar</span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/BusquedaAvanzada.png" alt="panel">
+                                        <div class="container mt-4">
+                                            <span class="number-style">3. </span>
+                                            <span>Si marca la casilla de búsqueda avanzada, podrá acceder a los campos secundarios y realizar un filtro de busqueda más preciso</span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/BDOCUMENTALES.png" alt="panel" style="height: 200px; width: 400px">
+                                        <div class="container mt-4">
+                                            <span class="number-style">4. </span>
+                                            <span>Se debe ingresar al panel de "Documentos" y luego a "Creación"</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                                    <span class="fas fa-chevron-left" style="color:black"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo3" data-slide="next">
+                                    <span class="fas fa-chevron-right" style="color:black;"></span>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                     <!-- Fin -->
 
@@ -311,6 +369,7 @@
 
 
         <script type="text/javascript" src="vendor/boostrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 
         <script>
             var modalAbierto
