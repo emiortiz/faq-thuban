@@ -142,4 +142,15 @@ body{
 
 .card{
     max-height: 282px ;
+    transition: transform .4s;
+}
+
+.card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.logo-responsive{
+    width: 15em;
 }
