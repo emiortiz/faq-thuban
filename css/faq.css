@@ -10,8 +10,12 @@ body{
     color:#0a3167;
 }
 .titulo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 1%;
+    font-family: 'helvetica';
+    /* font-weight: bold; */
+    /* border-bottom: 2px solid #0a3167; */
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .faq{
@@ -137,7 +141,11 @@ body{
 
 
 .carousel-item {
-    min-height: 290px
+    min-height: 290px;
+}
+
+.carousel-inner{
+    height: 340px;
 }
 
 .card{
@@ -153,4 +161,20 @@ body{
 
 .logo-responsive{
     width: 15em;
+}
+
+.h-18{
+    height: 18%;
+}
+
+.pt-6{
+    padding-top: 6rem;
+}
+
+.line-t{
+    border-bottom: 3px solid #0a3167;
+}
+
+.ctext-th{
+    color: #0a3167;
 }

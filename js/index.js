@@ -20,3 +20,12 @@
 //         modalAbierto.style.display = "none";
 //     }
 // }
+
+$('#my_image').hover(
+    function() { // esta función se ejecuta cuando se hace el mouseenter
+        $('#my_image').attr('src','img/LogoVivatianegro.png');
+    },
+    function() { // esta función se ejecuta cuando se hace el mouseleave
+        $('#my_image').attr('src','img/LogoVivatia.png');
+    }
+);
